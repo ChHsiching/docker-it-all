@@ -1,0 +1,11 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "8064:80"
+    volumes:
+      - ./config/nginx:/etc/nginx 
+      - ./src/html:/usr/share/nginx/html
+      - ./log/nginx:/var/log/nginx
+    restart: unless-stopped
