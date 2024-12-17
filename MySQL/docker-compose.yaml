@@ -1,0 +1,13 @@
+services:
+  nginx:
+    image: mysql:5.7
+    container_name: mysql-5-7
+    ports:
+      - "3309:3306"
+    volumes:
+      - ./data/mysql:/var/lib/mysql            # 数据文件映射
+      - ./config/mysql:/etc/mysql              # 配置文件映射
+      - ./logs/mysql:/var/log/mysql            # 日志文件映射
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    restart: unless-stopped
