@@ -1,0 +1,11 @@
+services:
+  nginx:
+    image: redis:3
+    container_name: redis3
+    ports:
+      - "6377:6379"
+    volumes:
+      - ./data/data:/data           # 数据目录映射
+      - ./config/redis:/etc/redis    # 配置文件映射
+      - ./logs/redis:/var/log/redis  # 日志目录映射
+    restart: unless-stopped
