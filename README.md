@@ -6,8 +6,9 @@ A one-stop collection of Docker Compose configurations for various services.
 
 ## Services Included  
 - **Nginx**: A powerful reverse proxy and web server.  
-- [TODO]**MySQL**: A reliable and widely-used relational database.  
-- [TODO]**Redis**: An in-memory key-value store for caching and more.  
+- **MySQL**: A reliable and widely-used relational database.  
+- **Redis**: An in-memory key-value store for caching and more.  
+- [TODO]**Open WebUI**: A user-friendly web-based interface for managing AI models, with built-in support for **Ollama** to run local large language models.  
 - [TODO]**Windows Containers**: Experiment with Windows-based Docker containers.  
 - And more to come!  
 
@@ -30,6 +31,19 @@ A one-stop collection of Docker Compose configurations for various services.
 
 ## Contribution  
 Feel free to contribute additional Docker Compose configurations or improve the existing ones. Open a pull request or start a discussion in the issues section.  
+
+## Acknowledgments
+
+This project makes use of the following AUR package:
+
+- [open-webui](https://aur.archlinux.org/packages/open-webui) by [mistersmee](https://aur.archlinux.org/account/mistersmee)
+
+This project also integrates the following open-source tool:
+
+- **Dockerized Windows System**: A containerized version of Windows for development and testing.  
+  - Source: [dockur/windows](https://github.com/dockur/windows)  
+
+Special thanks to the contributors for their work on these projects!
 
 ---
 
