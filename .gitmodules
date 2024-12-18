@@ -1,3 +1,6 @@
 [submodule "Windows"]
 	path = Windows
 	url = https://github.com/dockur/windows.git
+[submodule "Open-WebUI"]
+	path = Open-WebUI
+	url = https://github.com/open-webui/open-webui
